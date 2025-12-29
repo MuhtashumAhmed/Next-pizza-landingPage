@@ -15,7 +15,7 @@ const page = async ({ params }: PageProps) => {
   if (!data) return <p>Pizza not found!</p>;
 
   return (
-    <section className="container mx-auto py-10 overflow-hidden  ">
+    <section className="px-3 container mx-auto py-3 overflow-hidden  ">
       <PizzaDetail data={filterData} />
     </section>
   );

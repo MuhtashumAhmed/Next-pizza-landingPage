@@ -4,7 +4,7 @@ import Pizza from "./Pizza";
 
 const Menu = () => {
   return (
-    <section className="py-6 bg-gray-50 dark:bg-zinc-950 ">
+    <section className="px-3 py-6 bg-gray-50 dark:bg-zinc-950 ">
       <div className="container mx-auto px-4 sm:px-0  ">
         <Tabs defaultValue="pizza" className="w-full  ">
           <TabsList className="bg-orange-600">
@@ -15,7 +15,7 @@ const Menu = () => {
             <Pizza />
           </TabsContent>
           <TabsContent value="beverages">
-            <Beverages />{" "}
+            <Beverages />
           </TabsContent>
         </Tabs>
       </div>

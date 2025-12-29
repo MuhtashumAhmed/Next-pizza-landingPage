@@ -13,16 +13,33 @@ const Header = () => {
   const { setTheme, resolvedTheme } = useTheme();
   //   console.log("Resove theme", resolvedTheme);
   const [mounted, setMounted] = useState(false);
+  const [headerStyle, setHeaderStyle] = useState(false);
+
+  const addHeaderStyle = () => {
+    // console.log(window.scrollY >100 );
+    window.scrollY > 100 ? setHeaderStyle(true) : setHeaderStyle(false);
+  };
 
   useEffect(() => {
     setMounted(true);
+
+    window.addEventListener("scroll", addHeaderStyle);
+
+    
+    return () => {
+      window.removeEventListener("scroll",addHeaderStyle)
+    };
   }, []);
 
   // ⛔ prevent hydration mismatch
   if (!mounted) return null;
 
   return (
-    <header className=" h-16 pt-2 sticky top-0 z-10 bg-transparent backdrop-blur-xl   ">
+    <header
+      className={`px-3 h-16 pt-2 sticky top-0 z-10 bg-transparent backdrop-blur-xl ${
+        headerStyle && "border-b border-orange-600 shadow-2xl "
+      }   `}
+    >
       {/* contact number */}
       {/* <p className="flex items-center gap-0.5    ">
         <PhoneCall height={16} /> 0517 - 1238742

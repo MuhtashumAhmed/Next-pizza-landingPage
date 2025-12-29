@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
-import { Button } from "@/components/ui/button";
 import { pizzaDataInterface } from "@/data";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "@deemlol/next-icons";
@@ -22,8 +20,13 @@ export default function PizzaDetail({ data }: PizzaDetailProps) {
 
   return (
     <>
-      <button onClick={()=> router.back() } className="mb-2 font-bold p-2 rounded  bg-orange-500 cursor-pointer  "><ArrowLeft /> </button>
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-115px)] gap-4 border  p-4 rounded border-orange-600 border-dashed">
+      <button
+        onClick={() => router.back()}
+        className="mb-2 font-bold p-2 rounded  bg-orange-500 cursor-pointer  "
+      >
+        <ArrowLeft />{" "}
+      </button>
+      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-150px)] gap-4 border  p-4 rounded border-orange-600 border-dashed">
         {/* Image */}
         <figure className="">
           <Image
