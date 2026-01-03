@@ -153,19 +153,19 @@ export const beverages: Beverage[] = [
     id: 1,
     title: "Coca Cola",
     price: 120,
-    image: "/coca-cola.png",
+    image: "/coca-cola.webp",
   },
   {
     id: 2,
     title: "Pepsi",
-    price: 120,
-    image: "/pepsi.jpg",
+    price: 180,
+    image: "/pepsi.webp",
   },
   {
     id: 3,
     title: "Sprite",
-    price: 110,
-    image: "/sprite.jpg",
+    price: 170,
+    image: "/sprite.webp",
   },
   {
     id: 4,
@@ -177,6 +177,6 @@ export const beverages: Beverage[] = [
     id: 5,
     title: "Orange Juice",
     price: 160,
-    image: "/orange-juice.jpg",
+    image: "/orange-juice.png",
   },
 ];

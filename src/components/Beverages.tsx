@@ -10,7 +10,7 @@ const Beverages = () => {
         {beverages.map((drink) => (
           <div
             key={drink.id}
-            className="bg-accent rounded-sm p-4 shadow-md hover:shadow-lg transition"
+            className="bg-accent rounded-sm p-4 shadow  hover:shadow-orange-500 transition hover:-translate-y-1.5 "
           >
             <figure>
               <Image
@@ -18,7 +18,7 @@ const Beverages = () => {
                 alt={drink.title}
                 height={160}
                 width={160}
-                className="mx-auto"
+                className="mx-auto   "
               />
             </figure>
 

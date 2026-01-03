@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header
-      className={`px-3 h-16 pt-2 sticky top-0 z-10 bg-transparent backdrop-blur-xl ${
+      className={` h-16 pt-2 sticky top-0 z-10 bg-transparent backdrop-blur-xl ${
         headerStyle && "border-b border-orange-600 shadow-2xl "
       }  transition-all ease-in-out duration-300  `}
     >

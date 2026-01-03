@@ -24,7 +24,7 @@ const Card = ({ data }: CardProps) => {
   return (
     <div
       onClick={() => router.push(`/detail/${data.id}`)}
-      className="bg-accent rounded-sm p-4 shadow-md cursor-pointer"
+      className="bg-accent rounded-sm p-4 shadow cursor-pointer hover:shadow-orange-500 transition-all ease-out duration-500 hover:-translate-y-1 "
     >
       <figure>
         <Image
