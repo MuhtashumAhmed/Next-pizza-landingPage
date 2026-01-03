@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft } from "@deemlol/next-icons";
 import { pizzaDataInterface } from "@/app/types/types";
 
-interface PizzaDetailProps {
+interface PizzaDetailProps {d
   data: pizzaDataInterface;
 }
 

@@ -146,11 +146,11 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: orange #f1f1f1;
+  scrollbar-color: oklch(70.5% 0.213 47.604) #f1f1f1;
 }
 
 .dark {
   scrollbar-width: thin;
-  scrollbar-color: orange black;
+  scrollbar-color: oklch(70.5% 0.213 47.604) black;
 
 }

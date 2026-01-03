@@ -45,7 +45,10 @@ const Header = () => {
       </p> */}
       <nav className="container mx-auto px-4 sm:px-0 flex items-center justify-between  ">
         {/* logo */}
-        <Image src={"/logo.svg"} alt="logo" width={80} height={80} />
+        {/* <Image src={"/logo.svg"} alt="logo" width={80} height={80} /> */}
+          <h3 className="text-lg font-semibold text-zinc-900 dark:text-white cursor-pointer ">
+          🍕 PizzaHub
+        </h3>
 
         <ul>
           <li className="flex items-center   gap-3">

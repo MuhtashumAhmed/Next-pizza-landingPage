@@ -15,3 +15,12 @@ export interface pizzaDataInterface {
   price: PizzaPrice;
   isAvailable: boolean;
 }
+
+
+
+export type Beverage = {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+};

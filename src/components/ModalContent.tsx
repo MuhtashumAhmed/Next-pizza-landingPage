@@ -31,7 +31,7 @@ const ModalContent = ({ data }: CardProps) => {
   const [selectedSize, setSelectedSize] = useState<string>(data.sizes[0]);
   const [selectedCrust, setSelectedCrust] = useState<string>(data.crusts[0]);
   const [selectedTopping, setselectedTopping] = useState<string[]>([]);
-  console.log(selectedTopping);
+  // console.log(selectedTopping);
 
   const toggleTopping = (title: string) => {
     setselectedTopping(
@@ -46,13 +46,13 @@ const ModalContent = ({ data }: CardProps) => {
     return total + Number(topping?.price || 0);
   }, 0);
 
-  console.log(toppingsTotal);
+  // console.log(toppingsTotal);
 
   let price = data.price[selectedSize as keyof typeof data.price];
 
   let finalTotal = toppingsTotal + Number(price);
 
-  console.log(finalTotal);
+  // console.log(finalTotal);
 
   return (
     <div className="flex flex-col md:flex-row  gap-8    ">

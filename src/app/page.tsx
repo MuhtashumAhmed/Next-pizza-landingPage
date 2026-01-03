@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Herosection from "@/components/Herosection";
 import Menu from "@/components/Menu";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Herosection />
       <Menu />
+      <Footer /> 
     </div>
   );
 }

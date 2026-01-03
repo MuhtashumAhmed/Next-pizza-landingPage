@@ -1,4 +1,4 @@
-import { pizzaDataInterface } from "./app/types/types";
+import { Beverage, pizzaDataInterface } from "./app/types/types";
 
 
 export const pizzas: pizzaDataInterface[] = [
@@ -142,5 +142,41 @@ export const pizzas: pizzaDataInterface[] = [
       Large: 1699,
     },
     isAvailable: false,
+  },
+];
+
+
+
+
+export const beverages: Beverage[] = [
+  {
+    id: 1,
+    title: "Coca Cola",
+    price: 120,
+    image: "/coca-cola.png",
+  },
+  {
+    id: 2,
+    title: "Pepsi",
+    price: 120,
+    image: "/pepsi.jpg",
+  },
+  {
+    id: 3,
+    title: "Sprite",
+    price: 110,
+    image: "/sprite.jpg",
+  },
+  {
+    id: 4,
+    title: "Mint Margarita",
+    price: 180,
+    image: "/mintmargaritaa.png",
+  },
+  {
+    id: 5,
+    title: "Orange Juice",
+    price: 160,
+    image: "/orange-juice.jpg",
   },
 ];
