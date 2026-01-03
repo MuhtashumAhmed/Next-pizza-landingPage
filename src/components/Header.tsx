@@ -25,9 +25,8 @@ const Header = () => {
 
     window.addEventListener("scroll", addHeaderStyle);
 
-    
     return () => {
-      window.removeEventListener("scroll",addHeaderStyle)
+      window.removeEventListener("scroll", addHeaderStyle);
     };
   }, []);
 
