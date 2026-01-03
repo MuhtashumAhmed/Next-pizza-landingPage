@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { pizzaDataInterface } from "@/data";
+
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "@deemlol/next-icons";
+import { pizzaDataInterface } from "@/app/types/types";
 
 interface PizzaDetailProps {
   data: pizzaDataInterface;
