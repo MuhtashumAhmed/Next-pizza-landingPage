@@ -50,7 +50,7 @@ const Header = () => {
           🍕 PizzaHub
         </h3>
 
-        <ul>
+        <ul className="hidden sm:block " >
           <li className="flex items-center   gap-3">
             {links?.map((link, i) => {
               return (
